@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!--Import Font Awesome-->
-    <script src="https://kit.fontawesome.com/fe2a32b0d9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3a514e6805.js" crossorigin="anonymous"></script>
+
     <!--Linking the HTML and CSS files-->
     <link rel="stylesheet" href="css/style.css">
     <title>Fearless Into Tech</title>
@@ -24,24 +24,26 @@
                     <a href="#home" class="active">Logo</a>
                     <!-- Navigation links (hidden by default) -->
                     <div class=nav-links id="myLinks">
-                        <a href="#">HOME</a>
-                        <a href="#team">WHO WE ARE</a>
+                        <a href="#home">HOME</a>
+                        <a href="#team.html">WHO WE ARE</a>
                         <a href="#about">WHAT WE DO</a>
-                        <a href="#resources">RESOURCES</a>
-                        <a href="#events">EVENTS</a>
-                        <a href="#contribute">CONTRIBUTE</a>
+                        <a href="#resources.html">RESOURCES</a>
+                        <a href="#events.html" href="contribute.html">EVENTS</a>
+                        <a href="#contribute" href="contribute.html">CONTRIBUTE</a>
+                        <a class="back" href="index.html"></a>
 
                     </div>
-                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links 
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
                     </a>
+                -->
                 </div>
             </div>
         </div>
     </div>
-    <header>
-        <div class="container-fluid hero-session">
+    <header class="container-fluid">
+        <div class="hero-session">
             <div class="row">
                 <div class="col-12 col-md col-sm">
                     <div class="hero-heading">
@@ -51,27 +53,35 @@
                         <br>
                     </div>
                 </div>
-                <div class="row btn">
-                    <div class="col-12 col-md col-sm">
-                        <a href="#about" class="btn">Find Out More</a>
-                    </div>
-                </div>
+
             </div>
+        </div>
         </div>
         </div>
     </header>
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid section-1">
             <div class="row">
-                <div class="col-6 col-sm-3 one">
+                <div class="col-6 one">
+                    <h2>Fearless Into Tech</h2>
+                    <p>A free community initiative</p>
+                    <p>from women to women</p>
+                    <button class="btn btn-learn-more">
+                        <a href="#about" class="btn">Learn More</a>
+                    </button>
                 </div>
-                <div class="col-6 col-sm-3 two">
+                <div class="col-6 two">
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>
