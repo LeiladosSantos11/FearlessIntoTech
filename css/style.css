@@ -32,7 +32,7 @@
     padding: 0;
     overflow-x: hidden;
     text-align: left;
-    line-height: 1.8;
+    line-height: 1.4;
   }
 
 /*******Colours******/
@@ -234,57 +234,153 @@ background-color: var(--sherpaBlue);
 color: var(--white);
 }
 /***Session2***/
-.section-2 {
-  padding-left: 4em;
-  padding-top: 20%;
+.section-2,
+.section-9 {
+  padding-left: 3em;
+  padding-top: 20%; 
 }
 
 /***ABOUT_Session***/
-.section-2 {
+.section-2,
+.section-6 {
   background-color: var(--black);
   color:var(--white);
  
 }
 
-.about-2 {
-  background-image:url(../images/pexels-canva-studio.png);
-        height: 100vh;
+.about-2,
+.about-picture,
+.circle-pic {
+height: 100vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         margin: 0 auto;
       }
 
+.about-2 {
+  background-image:url(../images/pexels-canva-studio.png);
+}
+
+.about-picture {
+  background-image: url(../images/coding-team-working-on-laptops.jpg);
+}
+
+.circle-pic {
+  background-image: url(../images/two-people-learning-to-code.png);
+}
+
 /***Session3***/
 .section-3,
 .section-4 {
-  padding: 4em 0 3em 3em;
- font-weight: 600;
-  font-size: 1.5rem;
-  font-weight: 700;
+   padding: 3em 0 3em 3em;
+   font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
-.section-3 {
+.mission,
+.session-approach,
+.session-learning  {
+  padding: 3em 0; 
+  margin: 0 auto;
+}
+
+.team-title {
+  margin: 2.5em;
+}
+
+.section-3,
+.section-9 {
   color: var(--blue);
   background-color: var(--grey);
 }
 
-.section-4 {
+.section-4,
+.session-approach {
   background-color: var(--lightSeaGreen);
   color: var(--white);
 }
+
+
+
 h2 {
 font-size: 3rem;
-margin-bottom: .5em;
 font-weight: 800;
-
 }
+
+h3 {
+  padding-top: 1em;
+  font-size: 2rem;
+font-weight: 600;
+}
+
+
+
 
 p {
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
   font-weight: 400;
+}
+
+/*---------------------------------------------------*/
+/***Team Session/ Session 5***/
+.team-picture-1,
+.pic {
+  border-radius: 50%;
+ text-align: center;
+ margin-top: 2.8em;
+}
+
+.team-session {
+  display: flex;
+}
+.team-content {
+  padding: 1em 2em;
+  margin-bottom: 1em;
+}
+/*---------------------------------------------------*/
+/***Icons and Learning-Session***/
+.icon {
+  display: flex;
+  width: 130px;
+}
+
+.learning-circuit {
+  padding: 2em 0 0.2em 2em; 
+ 
+}
+
+.learning-circuit p {
+  padding-left: 0.5em;
+}
+
+.icon,
+.learning-circuit {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*---------------------------------------------------*/
+/***session-join-learning-circle***/
+
+.session-join-learning-circle {
+  background-color: var(--sherpaBlue);
+  color: var(--white);
+  padding: 4em 3em;
+}
+
+.session-join-learning-circle h2 {
+  margin: 2em;
+text-align: center;
+}
+
+.circle-text {
+  margin: 0 auto;
+  padding: 2em;
+
 }
 /*---------------------------------------------------*/
 /***Footer***/
