@@ -386,20 +386,6 @@ p {
   padding: 0;
 }
 
-
-
-
-
-/*
-.team-session {
-  display: flex;
-}
-*/
-
-
-/*---------------------------------------------------*/
-
-
 /*---------------------------------------------------*/
 /***session-join-learning-circle***/
 
@@ -408,7 +394,6 @@ p {
   color: var(--white);
   padding: 6em 3em;
 }
-
 
 .session-join-learning-circle h2 {
   padding-bottom: 1em;
@@ -425,7 +410,6 @@ p {
   margin-left:3em;
 }
 
-*/
 /*---------------------------------------------------*/
 /***Footer***/
 .footer {
