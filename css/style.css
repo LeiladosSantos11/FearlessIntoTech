@@ -226,27 +226,34 @@ a.btn {
             /****End @MediaQuery****/
         
 /*---------------------------------------------------*/
-/***Session1***/
+/***BackgroundColors and FontColours***/
+
 .section-1 {
-padding: 6em 0;
-padding-left: 3em;
 background-color: var(--sherpaBlue);
 color: var(--white);
 }
-/***Session2***/
-.section-2,
-.section-9 {
-  padding-left: 3em;
-  padding-top: 20%; 
-}
 
-/***ABOUT_Session***/
 .section-2,
 .section-6 {
   background-color: var(--black);
   color:var(--white);
- 
 }
+
+.section-3,
+.section-9 {
+  color: var(--blue);
+  background-color: var(--grey);
+}
+
+.section-4,
+.session-approach,
+.session-social-media {
+  background-color: var(--lightSeaGreen);
+  color: var(--white);
+}
+
+/*---------------------------------------------------*/
+/***BackgroundPictures***/
 
 .about-2,
 .about-picture,
@@ -270,10 +277,35 @@ height: 100vh;
   background-image: url(../images/two-people-learning-to-code.png);
 }
 
-/***Session3***/
+
+/*---------------------------------------------------*/
+/***Padding and Margins***/
+
+.section-1,
+.section-2,
+.section-9,
+.mission,
+.session-social-media {
+  padding: 6em 0 6em 3em;
+}
+
+.session-learning {
+  padding: 6em 1em 6em 1em;
+}
+
+/***Session2***/
+.section-2,
+.section-9 {
+  padding-top: 20%; 
+}
+
+
+
+/***Session3 ***/
 .section-3,
-.section-4 {
-   padding: 3em 0 3em 3em;
+.section-4,
+.session-approach {
+   padding: 3em 0 3em 2em;
    font-weight: 600;
     font-size: 1.5rem;
     font-weight: 700;
@@ -281,28 +313,52 @@ height: 100vh;
 
 .mission,
 .session-approach,
-.session-learning  {
-  padding: 3em 0; 
+.session-learning,
+.session-social-media { 
+  margin: 0 auto; 
+}
+
+.team-title, 
+.event-title {
+  margin: 2em 0 1.5em 1.5em;
+}
+
+
+/***Icons and Learning-Session***/
+.icon {
+  display: flex;
+  width: 130px;
+    padding: 1em;
+   
+}
+
+.learning-circuit {
+  padding: 0em 0 0 0; 
+ 
+}
+
+.learning-circuit p {
+  padding-left: 1em;
+  margin-bottom: 1.5em;
+}
+
+.icon,
+.learning-circuit {
   margin: 0 auto;
+  text-align: center;
 }
 
-.team-title {
-  margin: 2.5em;
+.team-content {
+  padding: 1em 2em;
+  margin-bottom: 1em;
 }
 
-.section-3,
-.section-9 {
-  color: var(--blue);
-  background-color: var(--grey);
+.team-picture-1,
+.pic {
+  border-radius: 50%;
+ text-align: center;
+ margin-top: 2.8em;
 }
-
-.section-4,
-.session-approach {
-  background-color: var(--lightSeaGreen);
-  color: var(--white);
-}
-
-
 
 h2 {
 font-size: 3rem;
@@ -316,52 +372,33 @@ font-weight: 600;
 }
 
 
+h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 4em;
+}
 
 
 p {
   font-size: 1.5rem;
+  font-weight: 400;
   margin: 0;
   padding: 0;
-  font-weight: 400;
 }
 
-/*---------------------------------------------------*/
-/***Team Session/ Session 5***/
-.team-picture-1,
-.pic {
-  border-radius: 50%;
- text-align: center;
- margin-top: 2.8em;
-}
 
+
+
+
+/*
 .team-session {
   display: flex;
 }
-.team-content {
-  padding: 1em 2em;
-  margin-bottom: 1em;
-}
+*/
+
+
 /*---------------------------------------------------*/
-/***Icons and Learning-Session***/
-.icon {
-  display: flex;
-  width: 130px;
-}
 
-.learning-circuit {
-  padding: 2em 0 0.2em 2em; 
- 
-}
-
-.learning-circuit p {
-  padding-left: 0.5em;
-}
-
-.icon,
-.learning-circuit {
-  margin: 0 auto;
-  text-align: center;
-}
 
 /*---------------------------------------------------*/
 /***session-join-learning-circle***/
@@ -369,24 +406,52 @@ p {
 .session-join-learning-circle {
   background-color: var(--sherpaBlue);
   color: var(--white);
-  padding: 4em 3em;
+  padding: 6em 3em;
 }
 
+
 .session-join-learning-circle h2 {
-  margin: 2em;
-text-align: center;
+  padding-bottom: 1em;
+}
+
+.session-join-learning-circle ul {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 1em;
 }
 
 .circle-text {
-  margin: 0 auto;
-  padding: 2em;
-
+  padding: 2em 0;
+  margin-left:3em;
 }
+
+*/
 /*---------------------------------------------------*/
 /***Footer***/
 .footer {
   background-color: var(--white);
   color: #1c1c1c;
-  padding: 2em 0;
+  padding: 3em 0;
 }
 
+/*---------------------------------------------------*/
+/***Event Page***/
+
+.event-session {
+  background-color: var(--grey);
+  margin: 2em 2em 1em 2em;
+  width: 50vw;
+height: 50vh;
+border: var(--blue) .3rem solid;
+}
+
+/*---------------------------------------------------*/
+/***Event Page/Social Media Section***/
+.session-social-media {
+  text-align: center;
+  padding: 3em 0;
+}
+
+.session-social-media p { 
+font-size: 2em;
+}
