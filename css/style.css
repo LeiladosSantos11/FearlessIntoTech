@@ -25,8 +25,7 @@
   }
   
   body {
-    font-family: Conv_johnston-medium,
-    font-family: "poppins", "Segoe UI", Arial,sans-serif, Tahoma;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 16px;
     margin:0;
@@ -69,7 +68,7 @@
 .topnav a {
   padding: .8em;
   text-decoration: none;
-
+font-weight: 400;
   /*display: block; */
   background-color: var(--white);
     color: var(--strongGrey);
@@ -111,9 +110,7 @@
       .hero-heading h2 {
         color: var(--white);
           font-size: 5rem;
-          font-weight: 700;
-          padding:0;
-          padding:0;
+          font-weight: 600;
       }
 
       .hero-heading span {
@@ -265,7 +262,7 @@ color: var(--white);
 .contribute-picture-1,
 .contribute-picture-2,
 .contribute-picture-3 {
-height: 110vh;
+height: 100vh;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -289,11 +286,11 @@ height: 110vh;
 }
 
 .contribute-picture-2 {
-  background-image: url(../images/woman-teaching-group.png);
+  background-image: url(../images/pexels-thisisengineering-3861964\ 2.png);
 }
 
 .contribute-picture-3 {
-  background-image: url(../images/pexels-thisisengineering-3861964\ 2.png);
+  background-image: url(../images/women-on-laptops-around-table.jpg);
 }
 /*---------------------------------------------------*/
 /***Padding and Margins***/
@@ -305,17 +302,27 @@ height: 110vh;
 .session-social-media,
 .resources, 
 .session-approach,
-.events,
-.contribute-text-1,
-.contribute-text-2,
-.contribute-text-3 {
-  padding: 6em 0 6em 3em;
+.events {
+  padding: 6em 0 6em 1.5em;
   font-size: 1.5rem;
     font-weight: 700;
 }
 
 .session-learning {
-  padding: 6em 1em 6em 1em;
+  padding: 6em 1em 6em 1.5em;
+}
+
+.contribute-text-1,
+.contribute-text-3 {
+  padding: 6em 0 6em 1em;
+  font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.contribute-text-2 {
+  padding: 4.7em 0 4.7em 1em;
+  font-size: 1.5rem;
+    font-weight: 500;
 }
 
 .section-2,
@@ -331,10 +338,12 @@ height: 110vh;
 }
 
 .mission,
-.session-approach,
+.approach,
 .session-learning,
-.session-social-media { 
+.session-social-media,
+.resources-text { 
   margin: 0 auto; 
+  padding-left: 1em;
 }
 
 .subtitle {
@@ -388,7 +397,7 @@ height: 110vh;
 
 h2 {
 font-size: 3rem;
-font-weight: 800;
+font-weight: 600;
 }
 
 h3 {
@@ -479,8 +488,7 @@ border: var(--blue) .3rem solid;
 
 /*---------------------------------------------------*/
 /***Event Page/Social Media Section***/
-.session-social-media, 
-.resources-text {
+.session-social-media {
   padding: 3em 1em;
   margin: 0 auto;
   text-align: center;
@@ -489,6 +497,7 @@ border: var(--blue) .3rem solid;
 .session-social-media h6,
 .resources-text h6 { 
 font-size: 2rem;
+padding-top: 2em;
 }
 
 .resources-social-media i {
