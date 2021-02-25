@@ -1,6 +1,4 @@
-
 /*******General Rules******/
-
 *,
 *::before,
 *::after {
@@ -17,22 +15,21 @@
     padding: 0;
   }
 
-  html {
+html {
     box-sizing: border-box;
-    /*line-height: 1.15;*/
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
   
-  body {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    margin:0;
-    padding: 0;
-    overflow-x: hidden;
-    text-align: left;
-    line-height: 1.4;
+body {
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+font-size: 16px;
+margin:0;
+padding: 0;
+overflow-x: hidden;
+text-align: left;
+line-height: 1.4;
   }
 
 /*******Colours******/
@@ -154,7 +151,7 @@ a.btn {
     color: var(--white);
     }
 
-    /*******@MediaQuery on Header Session******/
+    /*******@MediaQuery on Header Session*****/
     @media all and (max-width:30em){
      a.btn {
     display:block;
@@ -164,7 +161,7 @@ a.btn {
 
     @media only screen and (max-width: 490px){
         .hero-heading h2 {
-        text-align: left;
+        
         font-size: 3rem;
         font-weight: 700;  
           }
@@ -173,7 +170,7 @@ a.btn {
             color: var(--lightSeaGreen);
              font-size: 3rem;
              font-weight: 800;
-            text-align: left;
+           
          }
          .hero-heading {
             text-align: left;
@@ -187,25 +184,21 @@ a.btn {
     
         @media only screen and (max-width: 320px){
             .hero-heading h2 {
-                text-align: left;
                   font-size: 2.5rem;
                   font-weight: 600;  
               }
               .hero-heading span {
                 color: var(--lightSeaGreen);
                  font-size: 2.5rem;
-                 font-weight: 600;
-                text-align: left;
+                 font-weight: 600;    
              }
              .hero-heading {
-                text-align: left;
                 padding-left: 1em;
               }
             }
         
             @media only screen and (max-width: 540px){
                 .hero-heading h2 {
-                    text-align: left;
                       font-size: 3rem;
                       font-weight: 800;  
                   }
@@ -213,22 +206,21 @@ a.btn {
                     color: var(--lightSeaGreen);
                      font-size: 3rem;
                      font-weight: 900;
-                    text-align: left;
                  }
                  .hero-heading {
-                    text-align: left;
                     padding-left: .3em;
                     padding-top: 10em;
                   }
                 }
             /****End @MediaQuery****/
-        
+           
 /*---------------------------------------------------*/
 /***BackgroundColors and FontColours***/
 
-.section-1 {
-background-color: var(--sherpaBlue);
-color: var(--white);
+.section-1, 
+.session-join-learning-circle {
+  background-color: var(--sherpaBlue);
+  color: var(--white);
 }
 
 .section-2,
@@ -240,9 +232,10 @@ color: var(--white);
 
 .section-3,
 .section-9,
-.contribute-text-2 {
-  color: var(--blue);
+.contribute-text-2,
+.event-session {
   background-color: var(--grey);
+  color: var(--blue);
 }
 
 .section-4,
@@ -253,6 +246,10 @@ color: var(--white);
   color: var(--white);
 }
 
+.footer {
+  background-color: var(--white);
+  color: #1c1c1c;
+}
 /*---------------------------------------------------*/
 /***BackgroundPictures***/
 
@@ -263,10 +260,10 @@ color: var(--white);
 .contribute-picture-2,
 .contribute-picture-3 {
 height: 100vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
       }
 
 .about-2 {
@@ -292,6 +289,17 @@ height: 100vh;
 .contribute-picture-3 {
   background-image: url(../images/women-on-laptops-around-table.jpg);
 }
+
+/***Team Pictures***/
+
+.team-picture-1,
+.pic {
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 2.8em;
+}
+
+
 /*---------------------------------------------------*/
 /***Padding and Margins***/
 
@@ -303,38 +311,28 @@ height: 100vh;
 .resources, 
 .session-approach,
 .events {
-  padding: 6em 0 6em 1.5em;
+  padding: 6em 0 6em 1em;
   font-size: 1.5rem;
-    font-weight: 700;
+  font-weight: 700;
 }
 
-.session-learning {
+.session-learning,
+.session-join-learning-circle {
   padding: 6em 1em 6em 1.5em;
 }
 
+/***contribute page***/
 .contribute-text-1,
+.contribute-text-2,
 .contribute-text-3 {
-  padding: 6em 0 6em 1em;
-  font-size: 1.5rem;
-    font-weight: 500;
-}
-
-.contribute-text-2 {
-  padding: 4.7em 0 4.7em 1em;
-  font-size: 1.5rem;
-    font-weight: 500;
+  padding: 7em 0 6em 1em;
+  margin: 0 auto;
 }
 
 .section-2,
 .section-9 {
-  padding-top: 20%; 
-}
-
-.section-3, 
-.section-4,
-.session-approach {
-   font-size: 1.5rem;
-    font-weight: 700;
+  padding-top:20%;
+  padding-left: 2em;
 }
 
 .mission,
@@ -346,35 +344,38 @@ height: 100vh;
   padding-left: 1em;
 }
 
-.subtitle {
-  margin: 1.5em 0 1em 0;
-}
-
 .team-subtitle {
-  margin: 2em 0 1.5em 2em;
+  margin-top: 2em;
+  text-align: center;
 }
 
-.resources-subtitle,
-.event-subtitle {
-  margin-left: .6em;
+.resource-subtitle {
+margin-left: .95em;
 }
 
-/***Icons and Learning-Session***/
-.icon {
-  display: flex;
-  width: 130px;
-    padding: 1em;
-   
-}
-
-.learning-circuit {
-  padding: 0em 0 0 0; 
- 
+.event-subtitle,
+.subtitle {
+  margin-left: .7em;
 }
 
 .learning-circuit p {
   padding-left: 1em;
   margin-bottom: 1.5em;
+}
+
+.team-content {
+  padding: 1em 2em;
+  margin-bottom: 1em;
+}
+
+.footer {
+  padding: 3em 0;
+}
+
+/***Icons and Learning-Session***/
+img .icon { 
+  width: 50px;
+
 }
 
 .icon,
@@ -383,29 +384,31 @@ height: 100vh;
   text-align: center;
 }
 
-.team-content {
-  padding: 1em 2em;
-  margin-bottom: 1em;
+/***Icons//Social Media***/
+.socials {
+  box-sizing: border-box;
+  text-align: right;
 }
 
-.team-picture-1,
-.pic {
-  border-radius: 50%;
- text-align: center;
- margin-top: 2.8em;
+.socials i {
+  color: var(--lightSeaGreen);
+  font-size: 2.7rem;
+  padding: 0.5em .8em 0 0;
+
 }
+/*---------------------------------------------------*/
+/***Typography***/
 
 h2 {
-font-size: 3rem;
-font-weight: 600;
+  font-size: 3rem;
+  font-weight: 600;
 }
 
 h3 {
   padding-top: 1em;
   font-size: 2rem;
-font-weight: 600;
+  font-weight: 600;
 }
-
 
 h5 {
   text-align: center;
@@ -415,68 +418,48 @@ h5 {
 
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 400;
   margin: 0;
   padding: 0;
+  margin-right: 0.6em;
 }
 
-
-
-
-
-/*---------------------------------------------------*/
-/***session-join-learning-circle***/
-
-.session-join-learning-circle {
-  background-color: var(--sherpaBlue);
-  color: var(--white);
-  padding: 6em 3em;
- 
+.resources-text p,
+.event-text p {
+  text-align: center;
+  font-size: 1.5em;
 }
 
-
-.session-join-learning-circle h2 {
-  padding-bottom: 1em;
+.section-3, 
+.section-4,
+.session-approach {
+   font-size: 1.5rem;
+    font-weight: 700;
 }
 
+/*contribute page*/
+.contribute-text-1,
+.contribute-text-2
+.contribute-text-3 {
+  font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*session-join-learning-circle*/
 .session-join-learning-circle ul {
   font-weight: bolder;
   font-size: 1.5rem;
   padding: 1em;
 }
-/*
-.circle-text {
-  padding: 2em 0;
-  margin-left:3em;
-  margin: 0 auto;
-}
 
-*/
-/*---------------------------------------------------*/
 /***Footer***/
-.footer {
-  background-color: var(--white);
-  color: #1c1c1c;
-  padding: 3em 0;
-}
-
-.socials {
-  color: var(--lightSeaGreen);
-  box-sizing: border-box;
-  text-align: right;
-  
-}
-
-.socials i {
-  color: var(--lightSeaGreen);
-  font-size: 2.7rem;
-  padding: 0.5em .8em 0 0;
-
+.footer p {
+  font-size: 0.9rem;
 }
 
 /*---------------------------------------------------*/
-/***Event Page***/
+/*** Layout Event Page***/
 
 .event-session {
   background-color: var(--grey);
@@ -504,8 +487,6 @@ padding-top: 2em;
   color: var(--white);
   font-size: 2.7rem;
   padding-right: 0.5em;
+  margin-top: 1em;
   }
 
-p {
-  margin-right: 0.6em;
-}
