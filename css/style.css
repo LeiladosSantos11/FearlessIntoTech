@@ -83,7 +83,7 @@ line-height: 1.4;
     font-weight: 900;
     line-height: 1;
     list-style: outside none none;
-    margin: 1em auto;
+    margin: 0.5em auto;
     padding: .5em;
     text-align: right;
     text-decoration: none;
@@ -91,7 +91,7 @@ line-height: 1.4;
     background: var(--black);
     color: var(--lightSeaGreen) !important;
     left: 0em;
-    top: 1em; 
+    top: 4em; 
   }
   
 
@@ -115,7 +115,7 @@ line-height: 1.4;
   
  .logo {
    max-width: 130px;
-   padding: 1em;
+   padding: 2em 1em;
  }
 
  
