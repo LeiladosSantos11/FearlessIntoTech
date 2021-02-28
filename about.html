@@ -17,30 +17,28 @@
     <!--Linking the HTML and CSS files-->
     <link rel="stylesheet" href="css/style.css">
     <title>Fearless Into Tech</title>
+    <link rel="icon" type="image/png" href="./images/FIT_Black.png">
 </head>
 
 <body>
     <div class="container-fluid" id="nav">
         <div class="row">
-            <div class="col-6 col-sm">
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-6">
                 <img src="./images/FIT_Black.EmailSignaturesize.png" alt="logo's fearless into tech" class="logo">
             </div>
-            <div class="col-6 col-sm">
-                <!-- Top Navigation Menu -->
-                <div class="topnav">
-                    <a href="#icon" class="active"></a>
-                    <!-- Navigation links (hidden by default) -->
-                    <div class="nav-links" id="myLinks">
-                        <a class="back" href="./index.html">HOME</a>
-                        <a href="#about.html">WHAT WE DO</a>
-                        <a href="./team.html">TEAM</a>
-                        <a href="./resources.html">RESOURCES</a>
-                        <a href="./events.html">EVENTS</a>
-                        <a href="./contribute.html">CONTRIBUTE</a>
-                    </div>
+            <!-- Top Navigation Menu -->
+            <div class="col-xs-6 col-sm-6 col-md-9 col-lg-6 topnav">
+                <a class="back" href="./index.html" class="active"></a>
+                <!-- Navigation links (hidden by default) -->
+                <div class="nav-links" id="myLinks">
+                    <a class="back" href="./index.html" class="active">HOME</a>
+                    <a href="#about.html">WHAT WE DO</a>
+                    <a href="./team.html">TEAM</a>
+                    <a href="./resources.html">RESOURCES</a>
+                    <a href="./events.html">EVENTS</a>
+                    <a href="./contribute.html">CONTRIBUTE</a>
                 </div>
-
-                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <!--"Hamburger menu" / "Bar icon" to toggle the navigation links-->
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -49,18 +47,18 @@
     </div>
     <div class="container-fluid" id="about">
         <div class="row">
-            <div class="col-sm about-picture">
+            <div class="col-xs-6 col-sm about-picture">
             </div>
-            <div class="col-sm section-9">
-                <h2>Who we do</h2>
-                <p>learn about our mission and</p>
-                <p>meet our team</p>
+            <div class="col-xs-6 col-sm section-9" id="about-btn">
+                <h2>What we do</h2>
+                <p>learn about our group and</p>
+                <p>our learning circles</p>
             </div>
         </div>
     </div>
     <div class="container-fluid session-approach">
         <div class="row">
-            <div class="col-8 approach">
+            <div class="col-xs-6 col-8 approach">
                 <h2>Our approach</h2>
                 <h3>What are we?</h3>
                 <p>Fearless into Tech is not a school. It is a decentralised, self-organised group of self-learning
@@ -86,20 +84,20 @@
     <!--Icons and Learning-Session-->
     <div class="container-fluid session-learning">
         <div class="row">
-            <div class="col-sm learning-circuit">
+            <div class="col-xs-12 col-sm learning-circuit">
                 <img src="./images/meeting.png" id="icon-learning" alt="meeting's icon">
                 <p>Each learning circle meets up once a week</p>
             </div>
-            <div class="col-sm learning-circuit">
+            <div class="col-xs-12 col-sm learning-circuit">
                 <img src="./images/calendar.png" id="icon-learning" alt="calendar's icon">
                 <p>The learning circle agrees on a meeting place and time</p>
             </div>
-            <div class="col-sm learning-circuit">
+            <div class="col-xs-12 col-sm learning-circuit">
                 <img src="./images/goals.png" id="icon-learning" alt="goals's icon">
                 <p>The learning circle defines their own learning goals
                 </p>
             </div>
-            <div class="col-sm learning-circuit">
+            <div class="col-xs-12 col-sm learning-circuit">
                 <img src="./images/resource.png" id="icon-learning" alt="resource's icon">
                 <p>Learning circle can utilize the recommended resources</p>
             </div>
@@ -107,21 +105,22 @@
     </div>
     <div class="container-fluid session-join-learning-circle">
         <div class="row">
-            <div class="col-sm learning-text text">
+            <div class="col-xs-6 col-sm learning-text text">
                 <h2>Join our learning circle</h2>
                 <br>
-                <p>We currently have two learning circles:</p>
+                <h3>We currently have two learning circles:</h3>
                 <br>
                 <ul>
                     <li> - Web Development</li>
                     <li> - Python</li>
                 </ul>
+                <br>
                 <p>If you want to join one of these
                     learning circles or to create a new learning circles.
                 </p>
                 <p>Please just reach out.</p>
             </div>
-            <div class="col-sm circle-pic">
+            <div class="col-xs-6 col-sm circle-pic">
             </div>
         </div>
     </div>

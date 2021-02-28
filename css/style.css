@@ -47,53 +47,78 @@ line-height: 1.4;
 }
 
 .topnav {
-    overflow: hidden;
+     /*overflow: hidden;*/
     background-color: var(--white);
-    position: relative;
+     /*position: relative;*/
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
     display: none; 
-    text-align: right;
+    text-align: right; 
   }
 
   /* Style navigation menu links */
 .topnav a {
-  padding: .4em;
+  padding: 0.5em;
+  padding-top: 2em;
+  margin: 0 auto;
   text-decoration: none;
-font-weight: 400;
+  font-weight: 400;
   display: block; 
   background-color: var(--white);
-    color: var(--strongGrey);
-    display: inline-flex;
-    font-weight: 600;
+  color: var(--strongGrey);
+  display: inline-flex;
+  font-weight: 600;
   }
   
   /* Style the hamburger menu */
-  .topnav a.icon {
+  i.fa.fa-bars {
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    color: #5e5d5d;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    line-height: 1;
+    list-style: outside none none;
+    margin: 1em auto;
+    padding: .5em;
+    text-align: right;
+    text-decoration: none;
+    text-rendering: auto;
     background: var(--black);
-    color: var(--lightSeaGreen);
-    position: absolute;
-    right: 0;
-    top: 1.5em; 
+    color: var(--lightSeaGreen) !important;
+    left: 0em;
+    top: 1em; 
   }
+  
+
+  /*
+  #mylinks .icon {
+  background: var(--black);
+    color: var(--lightSeaGreen);
+    padding: 1em;
+    left: 1.5em;
+    top: 1em; 
+    position:relative;
+    /*display: none;*/
+    }
+  */
+ 
   
   /*background color on mouse-over */
   .topnav a:hover {
-    color: var(--lightSeaGreen);
+    color: var(--black);
   }
   
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: var(--black);
-    color: var(--white);
-  }
-
  .logo {
    max-width: 130px;
-   padding: 2em 1em;
+   padding: 1em;
  }
+
+ 
 
   
   /*******Header Session******/
@@ -134,102 +159,80 @@ font-weight: 400;
 /*-------------------/***HEADER_BTN***-----------*/
 .btn-learn-more {
   padding: 3em 2em;
+ 
 }
-a.btn {
+
+.btn a {
     display:inline-block;
-    padding:0.3em 1.2em;
-    margin:0 0.3em 0.3em 0;
+    padding:0.5em 1.2em;
+    margin:0 0.5em 0.5em 0;
     border-radius:2em;
     box-sizing: border-box;
     text-decoration:none;
     font-weight:400;
-    color:var(--black);
+    color: var(--white);
     background-color:var(--lightSeaGreen);
     text-align:center;
     transition: all 0.2s;
     font-size: 1.2rem;
     }
 
-    a.btn:hover{
+    .btn a:hover{
     background-color:var(--lightSeaGreen);
-    color: var(--white);
+    color: var(--black);
     }
 /*---------------------------------------------------*/
    
 /*-----------------------Start----------------------------*/
 /*-------------------/***@MediaQuery on Header Session***-----------*/
-    @media all and (max-width:30em){
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 90%;
+  }
+
+  .topnav a {
+    display:grid;
+    margin: 0;
+    padding: 0;
+    }
+
+  .mission,
+  .team-content {
+    width: 90%;
+    padding-left: 1em;
+  }
+  .hero-heading h2 {
+    font-size: 2rem;
+    font-weight: 700;  
+    text-align: left;
+      }
+      .hero-heading span {
+        color: var(--lightSeaGreen);
+         font-size: 3rem;
+         font-weight: 800;
+       
+     }
+     .hero-heading {
+        text-align: left;
+        padding-left: 1em;
+       padding-top: 5em;
+       margin: 0;
+       margin: 0 auto;
+        display: inline-block;
+      }
+      
+    }
+
+
+@media all and (max-width:30em){
      a.btn {
     display:block;
     margin:0.2em auto;
      }
+
     }
-
-    @media only screen and (max-width: 360px){
-      .mission {
-        padding-left: 0;
-      }
-    }
-
-    @media only screen and (max-width: 490px){
-      .mission {
-        padding-left: 0;
-      }
-        .hero-heading h2 {
-        font-size: 3rem;
-        font-weight: 700;  
-          }
-
-          .hero-heading span {
-            color: var(--lightSeaGreen);
-             font-size: 3rem;
-             font-weight: 800;
-           
-         }
-         .hero-heading {
-            text-align: left;
-            padding-left: 1em;
-           padding-top: 5em;
-           margin: 0;
-           margin: 0 auto;
-            display: inline-block;
-          }
-          
-        }
-    
-        @media only screen and (max-width: 320px){
-            .hero-heading h2 {
-                  font-size: 2.5rem;
-                  font-weight: 600;  
-              }
-              .hero-heading span {
-                color: var(--lightSeaGreen);
-                 font-size: 2.5rem;
-                 font-weight: 600;    
-             }
-             .hero-heading {
-                padding-left: 1em;
-              }
-              .mission {
-                padding-left: 0;
-              }
-            }
-        
-            @media only screen and (max-width: 540px){
-                .hero-heading h2 {
-                      font-size: 3rem;
-                      font-weight: 800;  
-                  }
-                  .hero-heading span {
-                    color: var(--lightSeaGreen);
-                     font-size: 3rem;
-                     font-weight: 900;
-                 }
-                 .hero-heading {
-                    padding-left: .3em;
-                    padding-top: 10em;
-                  }
-                }         
+      
 /*---------------------------/****End @MediaQuery****----------------*/
 
 
@@ -242,6 +245,9 @@ a.btn {
   color: var(--white);
 }
 
+.card {
+  background-color: var(--black);
+}
 .section-2,
 .section-6,
 .contribute-text-1 {
@@ -269,7 +275,7 @@ a.btn {
 .span,
 .team-icon {
   color: var(--lightSeaGreen);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .span::after{
@@ -333,6 +339,7 @@ height: 100vh;
 /*-------------------/***Padding and Margins***-----------*/
 .section-1,
 .section-2,
+.section-6,
 .section-9,
 .mission,
 .session-social-media,
@@ -352,12 +359,15 @@ height: 100vh;
 }
 
 .contribute-text-1,
-.contribute-text-2,
 .contribute-text-3,
-.resources-text, 
-.learning-text {
-  padding: 6em 0 6em 2em;
+.resources-text {
+  padding: 6em 0 6em 1.5em;
   margin: 0 auto;
+}
+
+.contribute-text-2,
+.learning-text {
+  padding: 4.8em 0 4.8em 1.5em;
 }
 
 .section-2,
@@ -406,6 +416,15 @@ margin-left: .95em;
   margin: 0 auto;
   text-align: center;
 }
+
+.card, 
+.card-text,
+.card-title {
+  margin: 2em auto;
+  padding: 0em 2em 0 2em;
+  text-align: center;
+}
+
 
 /*Footer*/
 .footer {
@@ -508,18 +527,22 @@ p {
 
 
 /*-----------------------Start----------------------------*/
-/*-------------------*** Layout Event Page*********-----------*/
+/*----------------*** Layout Event and Resource Page*********---------*/
 
+/*class for Event and Resource Page*/
 .event-session {
   background-color: var(--grey);
-  margin: 1em 2em;
+  display: flex;
+  margin: 1em auto;
   width: 50vw;
- height: 50vh;
-border: var(--blue) .3rem solid;
+  height: 30vh ;
+  border: var(--strongGrey) solid 3px;
+  align-items: center;
 }
-.event-session h5 {
+
+.event-session p {
   text-align: center;
-  margin-top: 4em;
+  padding-top: 1em;
 }
 /*---------------------------------------------------*/
 

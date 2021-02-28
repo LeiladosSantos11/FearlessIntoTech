@@ -17,52 +17,47 @@
     <!--Linking the HTML and CSS files-->
     <link rel="stylesheet" href="css/style.css">
     <title>Fearless Into Tech</title>
+    <link rel="icon" type="image/png" href="./images/FIT_Black.png">
+
 </head>
 
 <body>
     <div class="container-fluid" id="nav">
         <div class="row">
-            <div class="col-6">
+            <div class="col-xs-6 col-sm-6 col-md-3 col-lg-6">
                 <img src="./images/FIT_Black.EmailSignaturesize.png" alt="logo's fearless into tech" class="logo">
             </div>
-            <div class="col-6">
-                <!-- Top Navigation Menu -->
-                <div class="topnav">
-                    <a href="#home" class="active"></a>
-                    <!-- Navigation links (hidden by default) -->
-                    <div class="nav-links" id="myLinks">
-                        <a class="back" href="./index.html">HOME</a>
-                        <a href="./about.html">WHAT WE DO</a>
-                        <a href="#team.html">TEAM</a>
-                        <a href="./resources.html">RESOURCES</a>
-                        <a href="./events.html">EVENTS</a>
-                        <a href="./contribute.html">CONTRIBUTE</a>
-
-                    </div>
-                </div>
-
-                <!-- 
-                    "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <!-- Top Navigation Menu 
+            **** check the classes-->
+            <div class="nav-links col-xs-6 col-sm-6 col-md-9 col-lg-6 topnav" id="myLinks">
+                <a class="back" href="./index.html" class="active">HOME</a>
+                <a href="./about.html">WHAT WE DO</a>
+                <a href="#team.html">TEAM</a>
+                <a href="./resources.html">RESOURCES</a>
+                <a href="./events.html">EVENTS</a>
+                <a href="./contribute.html">CONTRIBUTE</a>
             </div>
+            <!--"Hamburger menu" / "Bar icon" to toggle the navigation links-->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+    </div>
     </div>
     <div class="container-fluid section-about" id="team">
         <div class="row">
-            <div class="col-sm section-2">
+            <div class="col-xs-12 col-sm section-2">
                 <h2>Who we are</h2>
                 <p>learn about our mission and</p>
                 <p>meet our team</p>
             </div>
-            <div class="col-sm about-2">
+            <div class="col-xs-12 col-sm about-2">
             </div>
         </div>
     </div>
     <div class="container-fluid section-3">
         <div class="row">
-            <div class="col-6 col- mission">
+            <div class="col-xs-6 col-6 col- mission">
                 <h2>Who we are</h2>
                 <p>Fearless into Tech is a non-profit initiative from women for women.</p>
                 <p>What brings us together is our strong will to hack into the digital sector, regardless of lacking a
@@ -77,7 +72,7 @@
     </div>
     <div class="container-fluid section-4">
         <div class="row">
-            <div class="col-6 col- mission">
+            <div class="col-xs-6 col-6 col- mission">
                 <h2>Our mission:</h2>
                 <p>Our mission is to make the Tech Sector more accessible for women and minorities from outside the
                     sector, seeking for a career change from non-tech to tech.</p>
@@ -100,15 +95,15 @@
     </div>
     <div class="container-fluid section-5">
         <div class="row team">
-            <div class="col-12">
+            <div class="col-xs-12 col-12">
                 <h2 class="team-subtitle">Meet our Team</h2>
             </div>
         </div>
         <div class="row team-session">
-            <div class="col-sm team-picture-1 pic">
+            <div class="col-xs-12 col-sm team-picture-1 pic">
                 <img src="images/eli.png" alt="Eli Von Radecki's picture">
             </div>
-            <div class="col-sm team-content">
+            <div class="col-xs-12 col-sm team-content">
                 <h3><strong>Eli Von Radecki</strong></h3>
                 <h4><em>Founder and Head of Strategic Partnerships and Growth</em></h4>
                 <p>A nomad and a lifelong learner. Eli strongly believes that everyone is able to learn everything and
@@ -123,10 +118,10 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-sm team-picture-2 pic">
+                <div class="col-xs-12 col-sm team-picture-2 pic">
                     <img src="images/claudia.png" alt="Claudia Meier's picture">
                 </div>
-                <div class="col-sm team-content">
+                <div class="col-xs-12 col-sm team-content">
                     <h3><strong>Claudia Meier</strong></h3>
                     <h4><em>Co-Founder and Head of Operations</em></h4>
                     <p>A Political Scientist, Claudia has previously worked within research. After relocating to
@@ -143,10 +138,10 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-sm team-picture-4 pic">
+                <div class="col-xs-6 col-sm team-picture-4 pic">
                     <img src="images/oxana.png" alt="OXANA GERASIMOVA's picture">
                 </div>
-                <div class="col-sm team-content">
+                <div class="col-xs-6 col-sm team-content">
                     <h3><strong>Oxana Gerasimova</strong></h3>
                     <h4><em>Board member, Head of Community Growth and Development</em></h4>
                     <p>For the last 15 years Oxana has been working in the UN system, and such topics as diversity,
@@ -161,9 +156,9 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-sm team-picture-5 pic">
+                <div class="col-xs-6 col-sm team-picture-5 pic">
                 </div>
-                <div class="col-sm team-content">
+                <div class="col-xs-6 col-sm team-content">
                     <h3><strong>Oana Parepa</strong></h3>
                     <h4><em>Head of Outreach</em></h4>
                     <p>Educated hospitality professional, Oana has been passionate about making things better in the
@@ -176,10 +171,10 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-sm team-picture-6 pic">
+                <div class="col-xs-12 col-sm team-picture-6 pic">
                     <img src="images/kubra.png" alt="Kübra Uzun's picture">
                 </div>
-                <div class="col-sm team-content">
+                <div class="col-xs-12 col-sm team-content">
                     <h3><strong>Kübra Uzun</strong></h3>
                     <h4><em>Head of Learning</em></h4>
                     <p>A software design student with a passion for interaction design. After completing her bachelor’s
@@ -193,16 +188,16 @@
         <br>
         <br>
         <div class="container-fluid section-6">
-            <div class="row team">
-                <div class="col-12">
+            <div class="row">
+                <div class="col-xs-12 col-12">
                     <h2 class="team-subtitle">Main Contributors</h2>
                 </div>
             </div>
             <div class="row team-session">
-                <div class="col-sm team-picture-7 pic">
+                <div class="col-xs-12 col-sm team-picture-7 pic">
                     <img src="images/anasofia.png" alt="Ana Sofia Patino Pelaez's picture">
                 </div>
-                <div class="col-sm team-content">
+                <div class="col-xs-12 col-sm team-content">
                     <h3><strong>Ana Sofia Patino Pelaez</strong></h3>
                     <h4><em>Publicist, Master of Business and Institutional Communication, Photographer.</em></h4>
                     <p>After working for more than 15 years in advertising agencies, publishing houses, and also as an
@@ -216,10 +211,11 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-sm team-picture-7 pic">
+                <div class="col-xs-12 col-sm team-picture-7 pic">
+                    <!--Need to add picture-->
                     <img src="" alt="">
                 </div>
-                <div class="col-sm team-content">
+                <div class="col-xs-12 col-sm team-content">
                     <h3><strong>Isabelle Jackinot</strong></h3>
                     <h4><em>Co-Founder and Head of Operations</em></h4>
                     <p>With nearly 20 years of experience in tech, she believes tech would really benefit from having a
@@ -231,10 +227,11 @@
             <br>
             <br>
             <div class="row">
-                <div class="col-sm team-picture-8 pic">
+                <div class="col-xs-12 col-sm team-picture-8 pic">
+                    <!--Need to add picture-->
                     <img src="" alt="">
                 </div>
-                <div class="col-sm team-content">
+                <div class="col-xs-12 col-sm team-content">
                     <h3><strong>Leila dos Santos</strong></h3>
                     <h4><em>Front-End Developer</em></h4>
                     <p>A career changer, with background in Business and Marketing into tech.</p>
@@ -243,25 +240,29 @@
                         Into Tech that provides opportunity for women to learn tech skills.</p>
                 </div>
             </div>
-            <br>
-            <br>
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm">
-                            <h4><strong>Contact us:</strong></h4>
-                            <p>fearlessintotech@gmail.com</p>
-                        </div>
-                        <div class="col-sm socials">
-                            <a href="https://www.facebook.com/fearlessintotech" target="_blank">
-                                <i class="fab fa-facebook"></i></a>
-                            <a href="https://www.linkedin.com/company/fearless-into-tech/" target="_blank">
-                                <i class="fab fa-linkedin"></i><a>
-                        </div>
+        </div>
+        <br>
+        <br>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm">
+                        <h4><strong>Contact us:</strong></h4>
+                        <p>fearlessintotech@gmail.com</p>
+                    </div>
+                    <div class="col-xs-12 col-sm socials">
+                        <a href="https://www.facebook.com/fearlessintotech" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/fearless-into-tech" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
-            </footer>
-            <script src="js/main.js"></script>
+            </div>
+    </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
