@@ -37,64 +37,70 @@ line-height: 1.4;
 --blue: #104c90;
 }
 
-/*******NAVBAR******/
-/*navigation menu */
-.icon {
+/***************NAVBAR****************
+navigation menu ****/
+
+a .icon {
     background-color: var(--white);
     padding:1.5em;
     display: flex;
     align-items: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
+
 .topnav {
-     /*overflow: hidden;*/
+     overflow: hidden;
     background-color: var(--white);
-     /*position: relative;*/
+     position: sticky;
+    
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
-    display: none; 
+    display: inline; 
     text-align: right; 
+    margin-right: 0;
   }
 
   /* Style navigation menu links */
 .topnav a {
-  padding: 0.5em;
-  padding-top: 2em;
+  padding-right: 0.5em;
+  padding-top: 3em;
   margin: 0 auto;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
   display: block; 
-  background-color: var(--white);
   color: var(--strongGrey);
   display: inline-flex;
-  font-weight: 600;
+  font-weight: 700;
+  }
+  .topnav a:hover {
+    color: var(--lightSeaGreen);
   }
   
-  /* Style the hamburger menu */
-  i.fa.fa-bars {
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    color: #5e5d5d;
-    cursor: pointer;
-    display: inline-block;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    line-height: 1;
-    list-style: outside none none;
-    margin: 0.5em auto;
-    padding: .5em;
-    text-align: right;
-    text-decoration: none;
-    text-rendering: auto;
-    background: var(--black);
-    color: var(--lightSeaGreen) !important;
-    left: 0em;
-    top: 4em; 
+i.fa.fa-bars {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: #0a0a0a;
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: none;
+  line-height: 1;
+  list-style: outside none none;
+  margin: 0.5em auto;
+  padding: .5em;
+  text-align: right;
+  text-decoration: none;
+  text-rendering: auto;
+  background: var(--black);
+  color: var(--lightSeaGreen) !important;
+  left: 0em;
+  top: 1em; 
   }
   
-
   /*
   #mylinks .icon {
   background: var(--black);
@@ -103,57 +109,51 @@ line-height: 1.4;
     left: 1.5em;
     top: 1em; 
     position:relative;
-    /*display: none;*/
+    display: none;
     }
   */
- 
-  
+
   /*background color on mouse-over */
-  .topnav a:hover {
-    color: var(--black);
-  }
+   
   
- .logo {
-   max-width: 130px;
-   padding: 2em 1em;
- }
+.logo {
+  max-width: 130px;
+  padding: 2em 1em;
+}
 
- 
-
-  
   /*******Header Session******/
-  header {
-  background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
-    url(../images/coding-team-working-on-laptops.jpg);
-        height: 100vh;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin: 0 auto;
-      }
+header {
+background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+  url(../images/coding-team-working-on-laptops.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
   
-      .hero-heading h2 {
-        color: var(--white);
-          font-size: 5rem;
-          font-weight: 600;
-      }
+.hero-heading h2 {
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: 600;
+}
 
-      .hero-heading span {
-         color: var(--lightSeaGreen);
-          font-size: 5rem;
-          font-weight: 800;
-          padding:0;
-          padding-right:2px;
-      }
+.hero-heading span {
+  color: var(--lightSeaGreen);
+  font-size: 5rem;
+  font-weight: 800;
+  padding:0;
+  padding-right:2px;
+}
 
-      .hero-heading {
-        text-align: left;
-        padding-left: 7em;
-       padding-top: 5em;
-       margin: 0;
-       margin: 0 auto;
-        display: inline-block;
-      }
+.hero-heading {
+  text-align: left;
+  padding-left: 7em;
+  padding-top: 5em;
+  margin: 0;
+  margin: 0 auto;
+  display: inline-block;
+}
 
 /*-----------------------Start----------------------------*/
 /*-------------------/***HEADER_BTN***-----------*/
@@ -177,43 +177,60 @@ line-height: 1.4;
     font-size: 1.2rem;
     }
 
-    .btn a:hover{
+.btn a:hoverm{
     background-color:var(--lightSeaGreen);
     color: var(--black);
-    }
+}
 /*---------------------------------------------------*/
    
 /*-----------------------Start----------------------------*/
 /*-------------------/***@MediaQuery on Header Session***-----------*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 827px) {
   /* For mobile phones: */
-  [class*="col-"] {
+  [class="col-"] {
     width: 90%;
+  }
+
+  /*NAVBAR*/
+  .topnav #myLinks {
+    display: none; 
+    text-align: right; 
+    
   }
 
   .topnav a {
     display:grid;
-    margin: 0;
+    margin-left: 2px;
     padding: 0;
-    }
+   }
+
+  i.fa.fa-bars {
+    display: inline;
+    margin: 2em auto;
+  } 
+
+  /**********/
 
   .mission,
-  .team-content {
+  .team-content,
+  .resources {
     width: 90%;
     padding-left: 1em;
+    margin: 0 auto;
   }
   .hero-heading h2 {
     font-size: 2rem;
     font-weight: 700;  
     text-align: left;
-      }
-      .hero-heading span {
-        color: var(--lightSeaGreen);
-         font-size: 3rem;
-         font-weight: 800;
-       
+  }
+  
+  .hero-heading span {
+     color: var(--lightSeaGreen);
+     font-size: 3rem;
+    font-weight: 800; 
      }
-     .hero-heading {
+
+  .hero-heading {
         text-align: left;
         padding-left: 1em;
        padding-top: 5em;
@@ -231,8 +248,7 @@ line-height: 1.4;
     margin:0.2em auto;
      }
 
-    }
-      
+    }   
 /*---------------------------/****End @MediaQuery****----------------*/
 
 
@@ -242,12 +258,13 @@ line-height: 1.4;
 .session-join-learning-circle,
 .events {
   background-color: var(--sherpaBlue);
-  color: var(--white);
+  color:var(--white);
 }
 
 .card {
   background-color: var(--black);
 }
+
 .section-2,
 .section-6,
 .contribute-text-1 {
@@ -275,19 +292,20 @@ line-height: 1.4;
 .span,
 .team-icon {
   color: var(--lightSeaGreen);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .span::after{
   color: var(--sherpaBlue);
 }
-.footer {
-  background-color: var(--white);
+
+footer {
   color: #1c1c1c;
+  padding: 3em 0em;
 }
 /*---------------------------------------------------*/
 
-/*-----------------------Start----------------------------*/
+/*---------------------------------------------------*/
 /*-------------------/***Images***-----------*/
 .about-2,
 .about-picture,
@@ -295,12 +313,12 @@ line-height: 1.4;
 .contribute-picture-1,
 .contribute-picture-2,
 .contribute-picture-3 {
-height: 100vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
-      }
+}
 
 .about-2 {
   background-image:url(../images/pexels-canva-studio.png);
@@ -335,12 +353,13 @@ height: 100vh;
 /*---------------------------------------------------*/
 
 
-/*-----------------------Start----------------------------*/
-/*-------------------/***Padding and Margins***-----------*/
+/*-----------------------------------------------*/
+/*-------------/***Padding and Margins***-----------*/
 .section-1,
 .section-2,
 .section-6,
 .section-9,
+.section-5,
 .mission,
 .session-social-media,
 .resources, 
@@ -410,6 +429,7 @@ margin-left: .95em;
 .team-session {
   text-align: left;
 }
+
 /*Event Page/Social Media Section*/
 .session-social-media {
   padding: 3em 1em;
@@ -452,13 +472,36 @@ margin-left: .95em;
 .socials i {
   color: var(--lightSeaGreen);
   font-size: 2.7rem;
-  padding: 0.5em .8em 0 0;
+  padding: 0.5em .3em 0 0;
 
 }
-/*---------------------------------------------------*/
 
-/*-----------------------Start----------------------------*/
-/*-------------------******Typography*********-----------*/
+/*---------Event Page/Social Media Section*****-----*/
+
+.session-social-media {
+  padding: 3em 1em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.session-social-media h6,
+.resources-text h6 { 
+  font-size: 2rem;
+  padding-top: 2em;
+}
+
+.resources-social-media i {
+  color: var(--white);
+  font-size: 2.7rem;
+  padding-right: 0.5em;
+  margin-top: 1em;
+}
+
+/*--------------------------End----------------------*/
+
+
+/*---------------------------------------------------*/
+/*-------------------******Typography*********--------*/
 h2 {
   font-size: 3rem;
   font-weight: 600;
@@ -478,7 +521,6 @@ h5 {
   font-size: 1.5rem;
   text-align: center;
 }
-
 
 p {
   font-size: 1.4rem;
@@ -526,47 +568,3 @@ p {
 /*---------------------------------------------------*/
 
 
-/*-----------------------Start----------------------------*/
-/*----------------*** Layout Event and Resource Page*********---------*/
-
-/*class for Event and Resource Page*/
-.event-session {
-  background-color: var(--grey);
-  display: flex;
-  margin: 1em auto;
-  width: 50vw;
-  height: 30vh ;
-  border: var(--strongGrey) solid 3px;
-  align-items: center;
-}
-
-.event-session p {
-  text-align: center;
-  padding-top: 1em;
-}
-/*---------------------------------------------------*/
-
-
-/*-----------------------Start----------------------------*/
-/*-----------Event Page/Social Media Section*********-----------*/
-
-.session-social-media {
-  padding: 3em 1em;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.session-social-media h6,
-.resources-text h6 { 
-font-size: 2rem;
-padding-top: 2em;
-}
-
-.resources-social-media i {
-  color: var(--white);
-  font-size: 2.7rem;
-  padding-right: 0.5em;
-  margin-top: 1em;
-  }
-
-/*--------------------------End-------------------------*/
