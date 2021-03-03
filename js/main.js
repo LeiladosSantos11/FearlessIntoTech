@@ -1,9 +1,25 @@
-
+/*navBar*/
 function myFunction() {
-  var x = document.getElementById("myLinks");
+  const x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
     x.style.display = "block";
   }
 }
+
+/*TypeJs on home page */
+const typed = new Typed('#typed',{
+  strings: [
+    '^1000',
+    '<span>M</span>OTIVATING',
+    '<span>I</span>MPORWERING',
+  "<span>D</span>RIVING CHANGES"
+  ],
+  backSpeed: 40,
+  typeSpeed: 40,
+  smartBackspace: true
+});
+
+
+

@@ -159,7 +159,7 @@ background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
 /*-------------------/***HEADER_BTN***-----------*/
 .btn-learn-more {
   padding: 3em 2em;
- 
+ text-align: left;
 }
 
 .btn a {
@@ -560,5 +560,9 @@ p {
   color: var(--strongGrey);
 }
 /*---------------------------------------------------*/
+
+#typed {
+  color:var(--white);
+}
 
 
