@@ -124,7 +124,7 @@ i.fa.fa-bars {
   /*******Header Session******/
 header {
 background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
-  url(../images/coding-team-working-on-laptops.jpg);
+  url(../images/women-on-laptops-around-table.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -149,8 +149,8 @@ background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
 .hero-heading {
   text-align: left;
   padding-left: 7em;
-  padding-top: 5em;
-  margin: 0;
+  padding-top: 10em;
+  
   margin: 0 auto;
   display: inline-block;
 }
@@ -189,66 +189,60 @@ background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
   /* For mobile phones: */
   [class="col-"] {
     width: 90%;
-  }
+}
 
-  /*NAVBAR*/
-  .topnav #myLinks {
-    display: none; 
-    text-align: right; 
-    
-  }
+/*NAVBAR*/
+.topnav #myLinks {
+  display: none; 
+  text-align: right;    
+}
 
-  .topnav a {
-    display:grid;
-    margin-left: 2px;
-    padding: 0;
-   }
+.topnav a {
+  display:grid;
+  margin-left: 2px;
+  padding: 0;
+}
 
-  i.fa.fa-bars {
-    display: inline;
-    margin: 2em auto;
-  } 
+i.fa.fa-bars {
+  display: inline;
+  margin: 2em auto;
+} 
 
-  /**********/
-
-  .mission,
-  .team-content,
-  .resources {
-    width: 90%;
-    padding-left: 1em;
-    margin: 0 auto;
-  }
-  .hero-heading h2 {
-    font-size: 2rem;
-    font-weight: 700;  
-    text-align: left;
-  }
+/**********/
+.mission,
+.team-content,
+.resources {
+  width: 90%;
+  padding-left: 1em;
+  margin: 0 auto;
+}
   
-  .hero-heading span {
-     color: var(--lightSeaGreen);
-     font-size: 3rem;
-    font-weight: 800; 
-     }
+.hero-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;  
+  
+}
+  
+.hero-heading span {
+  color: var(--lightSeaGreen);
+  font-size: 3rem;
+  font-weight: 800; 
+}
 
-  .hero-heading {
-        text-align: left;
-        padding-left: 1em;
-       padding-top: 5em;
-       margin: 0;
-       margin: 0 auto;
-        display: inline-block;
-      }
-      
-    }
-
+.hero-heading {
+  padding-left: 1em;
+  padding-bottom: 5em;
+  margin: 0 auto;
+  display: inline-block;
+}
+  }
 
 @media all and (max-width:30em){
-     a.btn {
-    display:block;
+  a.btn {
+  display:block;
     margin:0.2em auto;
-     }
-
-    }   
+}
+ }   
 /*---------------------------/****End @MediaQuery****----------------*/
 
 
@@ -329,11 +323,11 @@ footer {
 }
 
 .circle-pic {
-  background-image: url(../images/two-people-learning-to-code.png);
+  background-image: url(../images/christina-wocintechchat-com-FPQlXQtjkqU-unsplash.jpg);
 }
 
 .contribute-picture-1 {
-  background-image: url(../images/pexels-canva-studio.png);
+  background-image: url(../images/pexels-ketut-subiyanto-4473903.jpg);
 }
 
 .contribute-picture-2 {
@@ -341,7 +335,7 @@ footer {
 }
 
 .contribute-picture-3 {
-  background-image: url(../images/women-on-laptops-around-table.jpg);
+  background-image: url(../images/pexels-mentatdgt-1569076.jpg);
 }
 
 /*Team Pictures*/
@@ -386,7 +380,7 @@ footer {
 
 .contribute-text-2,
 .learning-text {
-  padding: 4.8em 0 4.8em 1.5em;
+  padding: 3em 0 3em 1.5em;
 }
 
 .section-2,
@@ -445,7 +439,6 @@ margin-left: .95em;
   text-align: center;
 }
 
-
 /*Footer*/
 .footer {
   padding: 3em 0 1em 0;
@@ -482,12 +475,6 @@ margin-left: .95em;
   padding: 3em 1em;
   margin: 0 auto;
   text-align: center;
-}
-
-.session-social-media h6,
-.resources-text h6 { 
-  font-size: 2rem;
-  padding-top: 2em;
 }
 
 .resources-social-media i {
@@ -553,6 +540,13 @@ p {
 .text {
   font-size: 1.2rem;
     font-weight: 500;
+}
+
+/*Event Page/Social Media Section*/
+.session-social-media h6,
+.resources-text h6 { 
+  font-size: 2rem;
+  padding-top: 2em;
 }
 
 /*Footer*/
