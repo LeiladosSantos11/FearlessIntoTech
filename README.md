@@ -14,6 +14,6 @@ Tech skills:
 - JavaScrip.
 
 
-This is a work in progress: https://fearlessintotech.netlify.app/#home
+This is a work in progress: https://leiladossantos11.github.io/FearlessIntoTech/
 
 
