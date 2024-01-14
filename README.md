@@ -10,7 +10,8 @@ I am working as a volunteer Front End Developer, my responsability is to build t
 Tech skills:
 - HTML,
 - CSS,
-- Boostrap,
+- Flexbox,
+- Mobile First Design
 - JavaScrip.
 
 
